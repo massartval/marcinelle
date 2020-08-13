@@ -1,0 +1,68 @@
+body {
+    background: rgb(58, 58, 58);
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Header */
+
+header {
+/*  background-color: lightgray; */
+    background-size: 100%;
+    background-position: center; /* What does it do? Seems like I can delete it with no impact... Keeping it for the moment though */
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fixed position - sit on top of the page */
+    top: 0;
+
+    transition: 0.2s;  /* Add a transition effect (logo and font size decreased upon) */
+    
+    background-color: rgba(144, 238, 144, 0.2)
+}
+header a {
+    color: white;
+    margin-top: 40px;
+    text-decoration: none; 
+    text-transform: uppercase; 
+}
+
+header .logo a {
+    background-image: url("logo.png");
+    background-size: 300px;     /* Specifies the size of the background images */
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    text-indent: -9999px;  /* Allows to keep the text in the html file but hide it in the browser */
+    top: -30px;
+    position: relative;  /* What does it do? Seems like I can delete it with no impact... Keeping it for the moment though */
+    border-radius: 50px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*EXTRA FEATURES*/
+
+img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover; /* The object keeps its ratio and fills the whole box */
+}
+
+section.pageContent {
+    margin-top: px; /* Leaves an empty space on top of the page. Not useful anymore since the hero.jpg isn't in the header itself anymore. Keeping it for now because I haven't decided what to do with the header yet. */
+}
